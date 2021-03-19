@@ -30,3 +30,5 @@ get_prop(platform_app, theme_prop)
 
 # Screenshot sound
 get_prop(platform_app, exported_audio_prop)
+# DC Dimming
+allow platform_app vendor_sysfs_dc_dim:file rw_file_perms;
