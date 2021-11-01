@@ -18,3 +18,7 @@ set_prop(system_app, theme_prop)
 
 # Allow Settings to set legacy wfd videomode prop
 set_prop(system_app, exported_system_prop);
+
+# Grant Settings app full access to FOD resources
+allow system_app fod_res_file:dir create_dir_perms;
+allow system_app fod_res_file:file create_file_perms;
