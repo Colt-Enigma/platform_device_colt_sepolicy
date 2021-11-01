@@ -6,18 +6,8 @@ hal_client_domain(system_app, hal_lineage_fastcharge)
 hal_client_domain(system_app, hal_lineage_livedisplay)
 hal_client_domain(system_app, hal_lineage_touch)
 
-# Allow SetupWizard to set recovery update prop
-set_prop(system_app, recovery_update_prop)
-
 # Read selinux status
 allow system_app selinuxfs:file r_file_perms;
-
-# Allow theme_prop to be read and set by Settings
-get_prop(system_app, theme_prop)
-set_prop(system_app, theme_prop)
-
-# Allow Settings to set legacy wfd videomode prop
-set_prop(system_app, exported_system_prop);
 
 # Grant Settings app full access to FOD resources
 allow system_app fod_res_file:dir create_dir_perms;

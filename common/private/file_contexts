@@ -13,8 +13,5 @@
 # Bash
 /system/xbin/bash          u:object_r:shell_exec:s0
 
-# Pocket judge
-/sys/kernel/pocket_judge(/.*)?	        u:object_r:pocket_judge_sysfs:s0
-
 # FOD resources dir
 /data/system/fod(/.*)?          u:object_r:fod_res_file:s0
