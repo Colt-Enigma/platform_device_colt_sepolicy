@@ -4,3 +4,5 @@ vendor.camera.aux.packagelist          u:object_r:exported_system_prop:s0
 
 # Radio
 ro.telephony.use_old_mnc_mcc_format    u:object_r:telephony_config_prop:s0
+
+persist.powerusage_provider_google     u:object_r:powerusage_provider_prop:s0
