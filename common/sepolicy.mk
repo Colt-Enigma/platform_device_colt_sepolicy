@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Arrow
+# inherit from ColtOS Project
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -16,20 +16,20 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/public
+    device/colt/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/private
+    device/colt/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/dynamic \
-    device/arrow/sepolicy/common/system
+    device/colt/sepolicy/common/dynamic \
+    device/colt/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/dynamic \
-    device/arrow/sepolicy/common/vendor
+    device/colt/sepolicy/common/dynamic \
+    device/colt/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/arrow/sepolicy/legacy-common/sepolicy.mk
+-include device/colt/sepolicy/legacy-common/sepolicy.mk
