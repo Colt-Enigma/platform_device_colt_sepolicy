@@ -15,3 +15,5 @@ allow platform_app mnt_pass_through_file:dir { create_dir_perms mounton };
 
 # Allow bypassing the FUSE layer
 r_dir_file(platform_app, mnt_pass_through_file)
+
+r_dir_file(platform_app, sysfs_zram);
