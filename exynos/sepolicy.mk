@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from Xtended
+# that inherit from colt
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,14 +10,14 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/xtended/sepolicy/exynos/private
+    device/colt/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/xtended/sepolicy/exynos/dynamic \
-    device/xtended/sepolicy/exynos/system
+    device/colt/sepolicy/exynos/dynamic \
+    device/colt/sepolicy/exynos/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/xtended/sepolicy/exynos/dynamic \
-    device/xtended/sepolicy/exynos/vendor
+    device/colt/sepolicy/exynos/dynamic \
+    device/colt/sepolicy/exynos/vendor
 endif
